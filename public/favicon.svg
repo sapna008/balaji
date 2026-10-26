@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#101D35"/>
+  <!-- Temple Shikhar / Crown Motif -->
+  <path d="M32 10L36 18H28L32 10Z" fill="#C9A96E"/>
+  <path d="M32 16L40 25H24L32 16Z" fill="#E5C78A"/>
+  <path d="M32 23L44 34H20L32 23Z" fill="#C9A96E"/>
+  <!-- Sacred Namam Tilak -->
+  <path d="M29 27H35V39C35 41 33.5 42 32 42C30.5 42 29 41 29 39V27Z" fill="#FAF5ED"/>
+  <path d="M31.2 29H32.8V38C32.8 38.6 32.4 39 32 39C31.6 39 31.2 38.6 31.2 38V29Z" fill="#D32F2F"/>
+  <!-- BE Monogram -->
+  <text x="32" y="55" font-family="'Cinzel', serif" font-weight="700" font-size="13" fill="#C9A96E" text-anchor="middle" letter-spacing="1">BE</text>
+</svg>
