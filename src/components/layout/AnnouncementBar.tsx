@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, Sparkles, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MessageSquare } from 'lucide-react';
 import { businessConfig } from '../../config/businessConfig';
 
 interface AnnouncementBarProps {
@@ -22,7 +22,6 @@ export const AnnouncementBar: React.FC<AnnouncementBarProps> = ({
             className="group flex items-center gap-1 text-theme-accent hover:text-white transition-colors"
             title="Click to view full Auspicious Invocation to Lord Venkateswara"
           >
-            <Sparkles className="w-3 h-3 text-theme-accent shrink-0 group-hover:scale-110 transition-transform" />
             <span className="font-devanagari font-semibold tracking-wide text-[11px] sm:text-xs whitespace-nowrap">
               ॥ ॐ श्री वेंकटेश्वराय नमः ॥
             </span>

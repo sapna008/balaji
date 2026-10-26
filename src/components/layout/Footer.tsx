@@ -6,7 +6,6 @@ import {
   MapPin,
   Clock,
   ShieldCheck,
-  Sparkles,
 } from 'lucide-react';
 import { businessConfig } from '../../config/businessConfig';
 
@@ -43,7 +42,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBlessingModal }) => {
             onClick={onOpenBlessingModal}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-theme-accent/40 text-xs text-theme-accent hover:bg-white/10 transition-colors"
           >
-            <Sparkles className="w-3.5 h-3.5 text-theme-accent" />
             <span className="font-devanagari font-medium text-sm">
               ॥ ॐ श्री वेंकटेश्वराय नमः ॥
             </span>
@@ -55,10 +53,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBlessingModal }) => {
       </div>
 
       {/* Main Footer Links & Directory */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-16">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10">
           {/* Column 1: Brand & Philosophy */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="col-span-2 lg:col-span-2 space-y-3 sm:space-y-4">
             <h3 className="text-lg font-display font-semibold text-white tracking-wide">
               Real Estate. Redefined.
             </h3>
@@ -157,7 +155,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBlessingModal }) => {
           </div>
 
           {/* Column 4: Contact & Office Desk */}
-          <div>
+          <div className="col-span-2 lg:col-span-1 pt-2 sm:pt-0 border-t sm:border-t-0 border-white/10">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-theme-accent mb-4">
               Consultancy Desk
             </h4>

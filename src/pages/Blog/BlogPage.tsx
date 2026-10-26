@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, ArrowRight, Sparkles, AlertCircle } from 'lucide-react';
+import { Clock, ArrowRight, AlertCircle } from 'lucide-react';
 import { BLOG_ARTICLES_DATA, type BlogArticle } from '../../data/blogArticles';
 import { Breadcrumbs } from '../../components/common/Breadcrumbs';
 import { SEO } from '../../components/common/SEO';
@@ -33,8 +33,7 @@ export const BlogPage: React.FC = () => {
       {/* Header Banner */}
       <section className="py-6 sm:py-16 bg-theme-surface-alt border-b border-theme-border px-3 sm:px-6">
         <div className="max-w-7xl mx-auto text-center max-w-3xl">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-theme-surface border border-theme-accent/30 text-[10px] sm:text-xs font-semibold text-theme-accent uppercase tracking-wider mb-2.5 sm:mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-theme-accent" />
+          <div className="inline-flex items-center px-3 py-1 rounded-full bg-theme-surface border border-theme-accent/30 text-[10px] sm:text-xs font-semibold text-theme-accent uppercase tracking-wider mb-2.5 sm:mb-4">
             <span>Research & Advisory Publication</span>
           </div>
 

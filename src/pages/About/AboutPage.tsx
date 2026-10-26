@@ -3,7 +3,6 @@ import {
   Shield,
   Eye,
   Target,
-  Sparkles,
   Users,
   Award,
   Scale,
@@ -29,8 +28,7 @@ export const AboutPage: React.FC = () => {
       <section className="relative py-8 sm:py-16 lg:py-20 bg-theme-surface-alt border-b border-theme-border overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-theme-surface border border-theme-accent/30 text-xs font-semibold text-theme-accent uppercase tracking-wider mb-4">
-              <Sparkles className="w-3.5 h-3.5" />
+            <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-theme-surface border border-theme-accent/30 text-xs font-semibold text-theme-accent uppercase tracking-wider mb-4">
               <span>Ethical Heritage & Modern Rigor</span>
             </div>
 

@@ -9,7 +9,6 @@ import {
   Compass,
   Users,
   Award,
-  Sparkles,
   Clock,
   ChevronRight,
   TrendingUp,
@@ -47,20 +46,19 @@ export const HomePage: React.FC = () => {
 
       {/* C. HERO SECTION */}
       <section className="relative min-h-0 sm:min-h-[85vh] flex items-center justify-center overflow-hidden bg-theme-secondary py-8 sm:py-20 lg:py-28 px-3 sm:px-6">
-        {/* Background Hero Image with Atmospheric Overlay */}
+        {/* Background Hero Image with Atmospheric Transparent Overlay */}
         <div className="absolute inset-0 z-0">
           <img
             src="/assets/hero/mumbai-skyline-golden.jpg"
             alt="Mumbai Coastal Skyline at Sunset - Balaji Enterprises Real Estate"
-            className="w-full h-full object-cover object-center scale-100 sm:scale-105"
+            className="w-full h-full object-cover object-center scale-100 sm:scale-105 brightness-100 contrast-[1.03]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#101D35] via-[#101D35]/80 to-[#101D35]/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-black/10" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto w-full text-center text-white">
           {/* Auspicious Devotional Subtitle Tag (Desktop & Tablet only to avoid mobile duplication) */}
-          <div className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#C9A96E]/40 mb-4 sm:mb-6 shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-[#C9A96E]" />
+          <div className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-black/40 backdrop-blur-md border border-[#C9A96E]/50 mb-4 sm:mb-6 shadow-sm">
             <span className="font-devanagari text-xs sm:text-sm text-[#F7E7C4] font-medium tracking-wide">
               ॥ ॐ श्री वेंकटेश्वराय नमः ॥
             </span>
@@ -71,8 +69,8 @@ export const HomePage: React.FC = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display tracking-tight text-white mb-2 sm:mb-4 leading-tight">
-            Real Estate. <span className="gold-gradient-text">Redefined.</span>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display tracking-tight text-white mb-2 sm:mb-4 leading-tight drop-shadow-lg">
+            Real Estate. <span className="gold-gradient-text drop-shadow-md">Redefined.</span>
           </h1>
 
           {/* Supporting Headline */}
@@ -684,8 +682,7 @@ export const HomePage: React.FC = () => {
       {/* M. STRONG CALL-TO-ACTION SECTION */}
       <section className="py-10 sm:py-16 lg:py-20 bg-gradient-to-r from-theme-primary to-theme-secondary text-white transition-colors relative overflow-hidden px-3 sm:px-6">
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-theme-accent border border-theme-accent/30 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3 h-3" />
+          <span className="inline-flex items-center px-3.5 py-1 rounded-full bg-white/10 text-theme-accent border border-theme-accent/30 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3">
             <span>Consultancy Mandates</span>
           </span>
 

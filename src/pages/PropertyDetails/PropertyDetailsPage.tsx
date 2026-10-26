@@ -13,7 +13,6 @@ import {
   Check,
   MessageSquare,
   ArrowRight,
-  Sparkles,
   AlertCircle,
   CheckCircle2,
 } from 'lucide-react';
@@ -223,6 +222,8 @@ export const PropertyDetailsPage: React.FC = () => {
                 </button>
               ))}
             </div>
+          )}
+
           {/* Mobile Fast Action CTA Bar */}
           <div className="grid grid-cols-2 gap-2.5 mt-3 sm:hidden">
             <button
@@ -239,7 +240,7 @@ export const PropertyDetailsPage: React.FC = () => {
               }}
               className="py-3 px-3 rounded-xl bg-theme-primary text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all"
             >
-              <Sparkles className="w-4 h-4 text-theme-accent" />
+              <Calendar className="w-4 h-4 text-theme-accent" />
               <span>Schedule Viewing</span>
             </button>
           </div>
@@ -355,7 +356,7 @@ export const PropertyDetailsPage: React.FC = () => {
             {property.features && property.features.length > 0 && (
               <div className="p-6 rounded-3xl bg-theme-surface border border-theme-border shadow-subtle space-y-4">
                 <h3 className="text-base font-bold font-display text-theme flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-theme-accent" />
+                  <CheckCircle2 className="w-4 h-4 text-theme-accent" />
                   Key Residence Features
                 </h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-theme-muted">

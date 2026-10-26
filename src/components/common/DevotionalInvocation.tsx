@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, X, ChevronRight } from 'lucide-react';
+import { X, ChevronRight } from 'lucide-react';
 
 interface DevotionalInvocationProps {
   forceOpen?: boolean;
@@ -62,10 +62,8 @@ export const DevotionalInvocation: React.FC<DevotionalInvocationProps> = ({
         </div>
 
         {/* Auspicious Chanting Header */}
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C9A96E]/15 border border-[#C9A96E]/30 text-[#E5C78A] text-[10px] sm:text-xs font-medium tracking-widest uppercase mb-3">
-          <Sparkles className="w-3 h-3 text-[#C9A96E]" />
+        <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#C9A96E]/15 border border-[#C9A96E]/30 text-[#E5C78A] text-[10px] sm:text-xs font-medium tracking-widest uppercase mb-3">
           <span>Auspicious Invocation</span>
-          <Sparkles className="w-3 h-3 text-[#C9A96E]" />
         </div>
 
         {/* Primary Sacred Mantra in Devanagari */}

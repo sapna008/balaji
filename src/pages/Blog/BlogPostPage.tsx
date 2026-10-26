@@ -71,7 +71,7 @@ export const BlogPostPage: React.FC = () => {
       />
 
       {/* Article Header */}
-      <header className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-4">
+      <header className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-10 space-y-3 sm:space-y-4">
         <div className="flex flex-wrap items-center gap-3">
           <span className="px-3 py-1 rounded-full text-[10px] font-semibold uppercase bg-theme-primary text-white tracking-wide">
             {article.category}

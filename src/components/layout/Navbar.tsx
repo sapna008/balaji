@@ -15,7 +15,6 @@ import {
   Palette,
   Check,
 } from 'lucide-react';
-import { ThemeSelector } from '../common/ThemeSelector';
 import { useTheme, type ThemeId } from '../../context/ThemeContext';
 import { businessConfig } from '../../config/businessConfig';
 
@@ -105,10 +104,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiryModal }) => {
             ))}
           </nav>
 
-          {/* Desktop Right Controls (Theme Selector + Enquire CTA) */}
+          {/* Desktop Right Controls (Enquire CTA) */}
           <div className="hidden lg:flex items-center gap-3">
-            <ThemeSelector />
-
             <button
               onClick={onOpenEnquiryModal}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-theme-primary text-white text-xs font-semibold hover:bg-theme-primary-hover border border-theme-accent/30 transition-all shadow-sm hover:shadow-md hover:border-theme-accent"
@@ -118,16 +115,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiryModal }) => {
             </button>
           </div>
 
-          {/* Mobile Right Controls */}
-          <div className="flex lg:hidden items-center gap-1.5 sm:gap-2">
-            <ThemeSelector />
-
+          {/* Mobile Right Controls (Border-free burger menu) */}
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="p-2 sm:p-2.5 rounded-xl border border-theme-border bg-theme-surface text-theme hover:bg-theme-surface-alt transition-colors touch-manipulation"
+              className="p-2 sm:p-2.5 rounded-xl text-theme hover:bg-theme-surface-alt transition-colors touch-manipulation focus:outline-none"
               aria-label="Open mobile navigation menu"
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="w-6 h-6" />
             </button>
           </div>
         </div>
